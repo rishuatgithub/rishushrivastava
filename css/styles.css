@@ -71,7 +71,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color:black;
+  background-color:#102027;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -4328,7 +4328,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #64ffda;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -6102,7 +6102,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: black !important; /* #bd5d38 !important; */
+  background-color: #102027 !important; /* #bd5d38 !important; */
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10038,6 +10038,7 @@ p.lead {
   /*font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /*text-transform: uppercase;*/
   font: calibri;
+  color:#cfd8dc;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -10046,6 +10047,7 @@ p.lead {
   /*font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /*text-transform: uppercase;*/
   font: calibri;
+  color:#cfd8dc;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -10078,7 +10080,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10105,7 +10107,7 @@ p.lead {
   height: 2rem;
   width: 2rem;
   /*background-color: #495057;*/
-  color: #fff;
+  color: #64ffda;
   /*border-radius: 100%;*/
   font-size: 1.5rem;
   margin-right: 1.5rem;
@@ -10113,9 +10115,9 @@ p.lead {
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
+.social-icons .social-icon:hover{
   /*background-color: #5ddef4; /* #bd5d38; */
-  color:#5ddef4;
+  color:#64ffda;
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -10153,4 +10155,30 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+/**
+===== Personal code ==========
+**/
+.top-bar li{
+  margin-right: 10px;
+}
+
+.btn-outline-success{
+  color: #64ffda !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+.btn-outline-success:hover{
+  background-color: #64ffda !important;
+  color: black !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#topNav{
+  background-color: #102027 !important;
+}
+
+.highlight:hover{
+  color: #64ffda;
+  text-decoration: underline;
+  -webkit-font-smoothing: antialiased !important;
 }
