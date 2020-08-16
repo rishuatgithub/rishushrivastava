@@ -10177,8 +10177,44 @@ section.resume-section .resume-section-content {
   background-color: #102027 !important;
 }
 
-.highlight:hover{
-  color: #64ffda;
+.highlight{
+  color: #64ffda !important;
   text-decoration: underline;
   -webkit-font-smoothing: antialiased !important;
+}
+.highlight-content{
+  color: #64ffda !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+.card{
+  background-color: #102027;
+}
+
+.blog-ahref{
+  color: wheat !important;
+}
+.card-text-sm{
+  font-size: 1em !important;
+}
+
+.badge-primary{
+  background-color: #64ffda !important;
+  color: black;
+}
+
+.dev-icons2 {
+  font-size: 1.5rem;
+  color: #64ffda;
+}
+.dev-icons2:hover {
+
+  color: #64ffda;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  animation-timing-function: ease-out;
+}
+
+.skills-text{
+  font-size: 0.4em;
 }

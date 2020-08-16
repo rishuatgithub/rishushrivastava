@@ -39,4 +39,10 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    // for blog title extract
+    //var title = $("#frame_id").contents().find("entry-title").html();
+    //alert(title)
+    //$(document).find("title").html(title);
+
 })(jQuery); // End of use strict
