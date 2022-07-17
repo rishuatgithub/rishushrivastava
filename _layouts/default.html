@@ -49,7 +49,8 @@ ga('send', 'pageview');
 
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
+        <span>Rishu Shrivastava</span>
     </a>
     <!-- End Logo -->
 
@@ -68,26 +69,34 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">About</a>
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
                 </li>
 
+                {% if page.url == "/about" %}
+                <li class="nav-item active">
+                    {% else %}
                 <li class="nav-item">
+                {% endif %}
                 <a class="nav-link" href="{{ site.baseurl }}/about">Experience</a>
                 </li>
 
+                {% if page.url == "/blog" %}
+                <li class="nav-item active">
+                    {% else %}
                 <li class="nav-item">
-                    <a target="_blank" class="nav-link"> Skills</a>
+                {% endif %}
+                <a target="_blank" class="nav-link" href="#">Blog</a>
                 </li>
 
+                {% if page.url == "/contact" %}
+                <li class="nav-item active">
+                    {% else %}
                 <li class="nav-item">
-                    <a target="_blank" class="nav-link"> Interest</a>
+                    {% endif %}
+                    <a target="_blank" class="nav-link" href="#">Contact</a>
                 </li>
 
-                <li class="nav-item">
-                <a target="_blank" class="nav-link"> Blogs</a>
-                </li>
-
-                {% include search-lunr.html %}
+                <!-- {% include search-lunr.html %} -->
 
             </ul>
 

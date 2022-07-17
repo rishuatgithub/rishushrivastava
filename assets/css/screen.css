@@ -313,6 +313,15 @@ span.post-read-more a:hover {
     margin-bottom: 1rem;
 }
 
+.mainheading h2.sitetitle {
+    font-family: Righteous;
+}
+
+.mainheading h2.posttitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 .footer {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
     padding-top: 15px;
