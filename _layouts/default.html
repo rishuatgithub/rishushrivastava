@@ -50,7 +50,7 @@ ga('send', 'pageview');
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
     <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
-        <span>Rishu Shrivastava</span>
+        <span><strong>Rishu Shrivastava</strong></span>
     </a>
     <!-- End Logo -->
 
@@ -72,12 +72,12 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
                 </li>
 
-                {% if page.url == "/about" %}
+                {% if page.url == "/portfolio" %}
                 <li class="nav-item active">
                     {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">Experience</a>
+                <a class="nav-link" href="{{ site.baseurl }}/portfolio">Portfolio</a>
                 </li>
 
                 {% if page.url == "/blog" %}
