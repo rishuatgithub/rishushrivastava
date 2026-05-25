@@ -124,6 +124,19 @@ export default function RecruiterMatch() {
               <span>Matching is calculated based on Rishu&apos;s actual open-source projects, community publications, and professional service deliveries in multiple APAC and global corporate deployments.</span>
             </div>
 
+            {/* Direct Meeting Trigger Link */}
+            <div className="pt-4 border-t border-slate-250/60">
+              <button
+                onClick={() => {
+                  const el = document.getElementById("scheduler_wrapper");
+                  el?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="w-full py-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold font-display tracking-wider uppercase flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm"
+              >
+                <span>Schedule Google Meet or Zoom Call instantly</span>
+              </button>
+            </div>
+
           </div>
 
         </div>

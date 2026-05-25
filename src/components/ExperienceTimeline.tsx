@@ -21,7 +21,7 @@ export default function ExperienceTimeline() {
           return (
             <div key={exp.id} className="relative group">
               {/* Timeline indicator node with Professional Polish theme */}
-              <div className="absolute -left-[45px] sm:-left-[53px] top-1.5 flex items-center justify-center w-6 h-6 rounded-full bg-white border-2 border-slate-300 group-hover:border-[#3b82f6] transition-all font-mono font-bold text-[10px] leading-none text-slate-500 shadow-sm">
+              <div className="absolute -left-[37px] sm:-left-[53px] top-1.5 flex items-center justify-center w-6 h-6 rounded-full bg-white border-2 border-slate-300 group-hover:border-[#3b82f6] transition-all font-mono font-bold text-[10px] leading-none text-slate-500 shadow-sm">
                 0{idx + 1}
               </div>
 

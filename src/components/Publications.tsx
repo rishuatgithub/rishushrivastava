@@ -28,13 +28,13 @@ export default function Publications() {
             </h2>
           </div>
           <p className="text-slate-500 text-sm md:text-base max-w-2xl">
-            Thought leadership writeups, architecture tutorials, and strategic commentary authored by Rishu on machine learning, cloud provisioning, and data frameworks.
+            Thought leadership writeups, data architecture tutorials, and strategic commentary authored by Rishu on machine learning, cloud provisioning, and data frameworks. Visit <a href="https://tech-spaghetti.com/" target="_blank" rel="noreferrer" className="text-[#3b82f6] hover:underline font-semibold font-mono">tech-spaghetti.com</a> for his full blogging series.
           </p>
         </div>
 
         {/* Search Input bar */}
         <div className="relative w-full lg:w-72">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-450" size={16} />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
           <input
             type="text"
             placeholder="Search blogs or tags..."
@@ -54,7 +54,7 @@ export default function Publications() {
             className={`px-3.5 py-1.5 rounded text-xs font-semibold tracking-wide transition-all ${
               activeCategory === cat
                 ? "bg-[#0f172a] text-white shadow-sm"
-                : "bg-white border border-slate-205 hover:bg-[#f8fafc] text-slate-600 cursor-pointer"
+                : "bg-white border border-slate-200 hover:bg-[#f8fafc] text-slate-600 cursor-pointer"
             }`}
           >
             {cat}
