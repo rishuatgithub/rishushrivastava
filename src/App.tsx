@@ -145,9 +145,9 @@ export default function App() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-500 font-mono uppercase">
           <span>London, UK</span>
           <span>•</span>
-          <span>Senior Architect, Product Innovation</span>
+          <span>Senior Architect</span>
           <span>•</span>
-          <span>Data, Cloud &amp; AI Advisor</span>
+          <span>Data, Cloud, AI &amp; Product Innovation</span>
         </div>
       </footer>
 
