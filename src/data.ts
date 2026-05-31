@@ -20,14 +20,10 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     location: "United Kingdom",
     period: "July 2022 - Present",
     bulletPoints: [
-      "Lead Data and AI architecture strategy across EMEA as part of the Professional Services, designing scalable enterprise Pentaho data platform for global clients.",
-      "Directed a $2 million GenAI/AI product initiative with Hitachi Ltd., Japan, delivering AI-powered capabilities contributing to increased product adoption and revenue growth.",
-      "Designed and Delivered Pentaho CDC (Change Data Capture) product as part of the Product Innovation team, enabling near real-time data ingestion and reducing latency. Pentaho CDC is now GA and part of the Pentaho Ecosystem.",
-      "Contributed to the AI product strategy for the Pentaho data intelligence and its data governance framework.",
-      "Led the delivery of the AI powered Migration accelerator to convert Informatica PowerCenter mappings to Pentaho using agentic AI, reducing migration effort by approx 60 – 70%.",
-      "Lead a team of 3 to implement a comprehensive data governance framework (GDPR, PII detection, etc.) using Pentaho Data Catalog, ensuring compliance with regulatory requirements and improving data quality by 40% for clients.",
-      "Acted as a technical advisor in pre-sales, influencing deal closures through architecture design, demos, and executive presentations.",
-      "Led and mentored a team of architects/engineers, driving delivery excellence and innovation adoption."
+      "Lead EMEA Data and AI architecture strategy, designing scalable enterprise Pentaho deployments for global fortune-list clients.",
+      "Directed a multi-million $ GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities that accelerated product adoption and revenue streams.",
+      "Architected and shipped Pentaho Change Data Capture (CDC) to General Availability (GA), delivering high-throughput real-time ingestion with near-zero latency.",
+      "Conceived and delivered an Agentic AI-driven automated Migration Accelerator to translate Informatica mappings to Pentaho, slashing conversion overhead by 60-70%."
     ],
     technologies: ["Pentaho PDI", "Pentaho Data Catalog", "AWS", "Snowflake", "Generative AI", "Agentic AI", "Python", "Java", "Terraform", "Docker", "DevOps", "Data Governance"],
     featuredProject: {
@@ -40,23 +36,49 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     role: "Data Architect & Analytics Manager",
     company: "Cognizant",
     location: "India & United Kingdom",
-    period: "Jan 2012 - July 2022",
+    period: "Jan 2019 - July 2022",
     bulletPoints: [
-      "Architected event-based serverless ETL/BI pipeline using AWS for building a scalable marketing and sales analytics dashboard for a leading Pharma client (utilizing Athena, Lambda, Glue, DynamoDB, Snowflake, Terraform, and Tableau with GitLab CI/CD).",
-      "Architected a lambda-based regulatory trade settlements analytical solution using Cloudera big data stack (Hive, Spark, Impala), Apache Kafka, and Tableau for a leading investment bank in the UK/Europe.",
-      "Designed and developed an event-based microservice architecture for processing and parsing email invoices and inter-bank communications on On-premise and Hybrid Cloud space using Kafka, PyTorch, Python, Spark, and Kubernetes.",
-      "Managed and led technical delivery of multiple Data Architecture and engineering projects in close collaboration with multidisciplinary teams of business stakeholders, clients, developers, and operations globally.",
-      "Improved 90% Tableau dashboard loading performance by refactoring complex underlying data structures and partition strategies.",
-      "Won first prize in the Cognizant Global Innovation Challenge by designing a Generative AI application to translate programming languages.",
-      "Drove engineering innovation by compiling reusable assets and architecture blueprints in Python, Java, AWS, and GCP cloud environments.",
-      "Led DWBI technical consultancy to win RFCs for Cognizant on a MOOC implementation analytical dashboard for a leading publisher in Europe.",
-      "Captured GDPR-compliant business requirements and prepared secure, peer-reviewed technical design documentation.",
-      "Developed scalable and high-throughput ingestion pipelines using enterprise systems like Pentaho and Alteryx on AWS Cloud."
+      "Architected secure, serverless cloud pipelines (AWS Glue, Lambda, Athena, Snowflake) supporting real-time sales BI and trade settlements for Tier-1 investment banks and global pharmaceutical leaders.",
+      "Engineered event-driven microservices running on Kubernetes to automate complex parsing of structured and unstructured business communications.",
+      "Spearheaded technical responses to RFP/RFC consultations, successfully securing high-value multi-year modernization engagements."
     ],
-    technologies: ["AWS", "Cloudera (Hive, Spark, Impala)", "Kafka", "Python", "PyTorch", "Terraform", "Docker", "Tableau", "GitLab CI/CD", "Snowflake", "Pentaho Plus"],
+    technologies: ["AWS", "Snowflake", "Terraform", "Docker", "Kubernetes", "Python", "Tableau", "GitLab CI/CD"],
     featuredProject: {
       name: "Serverless Analytics Ecosystem",
       description: "Codesigned an AWS event-sourced marketing pipeline serving dynamic Tableau reporting models, achieving massive cost reductions and sub-second rendering bounds."
+    }
+  },
+  {
+    id: "exp3",
+    role: "Senior Associate & Tech Consultant",
+    company: "Cognizant",
+    location: "India",
+    period: "Jan 2015 - Dec 2018",
+    bulletPoints: [
+      "Designed and developed low-latency streaming clusters using Apache Kafka, Spark Streaming, and Cloudera Hadoop for financial transaction routing.",
+      "Refactored underlying database schemas and partitioning strategies, boosting sluggish business dashboards by up to 90% in query speeds.",
+      "Won first prize in the Cognizant Global Innovation Challenge with a custom AI prototype designed to automatically translate and compile languages."
+    ],
+    technologies: ["Kafka", "Apache Spark", "Hive", "Python", "Java", "Pentaho Plus", "Tableau", "Cloudera"],
+    featuredProject: {
+      name: "Language Translation Engine",
+      description: "Created an AI-driven script compiler and translator converting legacy code patterns, winning top laurels in the annual Cognizant Innovation challenge."
+    }
+  },
+  {
+    id: "exp4",
+    role: "Software Engineer & Tech Analyst",
+    company: "Cognizant",
+    location: "India",
+    period: "Jan 2012 - Dec 2014",
+    bulletPoints: [
+      "Engineered robust batch extraction, transformation, and high-throughput ingestion pipelines using enterprise orchestration platforms such as Pentaho and Alteryx.",
+      "Developed complex Java microservices, SQL databases, and peer-reviewed design assets to ensure GDPR compliance."
+    ],
+    technologies: ["Java", "SQL", "Pentaho PDI", "Alteryx", "Linux"],
+    featuredProject: {
+      name: "High-Throughput Ingestion Framework",
+      description: "Designed re-usable corporate assets for automated metadata injection, accelerating DW ingestion cycles by approximately 30%."
     }
   }
 ];
