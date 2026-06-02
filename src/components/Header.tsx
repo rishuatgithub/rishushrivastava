@@ -16,25 +16,19 @@ export default function Header() {
         {/* Dynamic header status bar with professional polish theme */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-6 mb-8">
           <div className="flex items-center gap-2">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
             <span className="text-xs font-mono text-slate-400 tracking-wider uppercase font-semibold">LONDON, UK • GMT+1</span>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-mono">
-            <span className="text-slate-400">Status:</span>
-            <span className="px-2.5 py-1 rounded bg-slate-900 text-slate-100 border border-slate-800 font-medium whitespace-nowrap">Available for Strategic Advisory</span>
-            <button
-              onClick={() => {
-                const el = document.getElementById("scheduler_wrapper");
-                el?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="px-2.5 py-1 rounded bg-[#3b82f6] hover:bg-blue-600 text-white font-bold cursor-pointer transition-colors"
-            >
-              Book Call
-            </button>
+          <div className="flex items-center gap-2.5 text-xs">
+            <span className="font-mono text-[#0f172a] uppercase tracking-wider text-[10px] font-bold">CURRENT STATUS:</span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-250 font-sans font-bold tracking-wide shadow-sm">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              AVAILABLE
+            </span>
           </div>
         </div>
 
@@ -73,7 +67,7 @@ export default function Header() {
               <div className="space-y-3">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] text-[11px] font-mono font-bold uppercase tracking-wider">
                   <Sparkles size={11} className="text-[#3b82f6]" />
-                  HITACHI VANTARA PROFESSIONAL SERVICES
+                  Pentaho / Hitachi Vantara
                 </div>
                 <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#0f172a] tracking-tight leading-none">
                   {INTRO_HIGHLIGHTS.name}

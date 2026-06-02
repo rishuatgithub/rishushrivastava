@@ -72,64 +72,80 @@ export default function Publications() {
           {filteredArticles.map((art) => (
             <article
               key={art.id}
-              className="bg-white rounded-2xl border border-slate-200 hover:border-slate-300 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all group overflow-hidden relative"
+              className="bg-white rounded-2xl border border-slate-200 hover:border-slate-300 flex flex-col justify-between shadow-sm hover:shadow-md transition-all group overflow-hidden relative"
             >
-              <div className="space-y-3">
-                {/* Meta details */}
-                <div className="flex items-center justify-between gap-2 text-[11px] text-slate-400 font-mono font-semibold">
-                  <span className="px-2 py-0.5 rounded bg-[#f1f5f9] border border-[#e2e8f0] font-bold text-[#475569] uppercase tracking-widest leading-none">
+              {/* Cover Image Header */}
+              {art.coverImage && (
+                <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-slate-950">
+                  <img
+                    src={art.coverImage}
+                    alt={art.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-slate-950/10 to-transparent pointer-events-none" />
+                  
+                  {/* Floating Category Tag */}
+                  <span className="absolute top-4 left-4 px-2.5 py-0.5 text-[9.5px] font-mono font-bold uppercase tracking-widest text-[#0f172a] bg-white/90 backdrop-blur-md rounded-full shadow-sm border border-white/50">
                     {art.category}
                   </span>
-                  <div className="flex items-center gap-2 text-slate-400">
-                    <span className="flex items-center gap-0.5">
-                      <Calendar size={11} />
+                </div>
+              )}
+
+              {/* Card Body */}
+              <div className="p-5 flex flex-col justify-between flex-1 space-y-4">
+                <div className="space-y-2.5">
+                  {/* Meta details */}
+                  <div className="flex items-center gap-3 text-[11px] text-slate-450 font-mono font-semibold">
+                    <span className="flex items-center gap-1">
+                      <Calendar size={12} className="text-slate-400" />
                       {art.publishDate}
                     </span>
-                    <span>•</span>
-                    <span className="flex items-center gap-0.5">
-                      <Hourglass size={11} />
+                    <span className="text-slate-300">•</span>
+                    <span className="flex items-center gap-1">
+                      <Hourglass size={12} className="text-slate-400" />
                       {art.readingTime}
                     </span>
                   </div>
+
+                  <h3 className="font-display text-base font-bold text-[#0f172a] group-hover:text-[#3b82f6] transition-colors line-clamp-2 leading-snug">
+                    {art.title}
+                  </h3>
+
+                  <p className="text-slate-500 text-xs sm:text-sm leading-relaxed line-clamp-3 font-normal">
+                    {art.summary}
+                  </p>
                 </div>
 
-                <h3 className="font-display text-base font-bold text-[#0f172a] group-hover:text-[#3b82f6] transition-colors line-clamp-3 leading-tight pr-1">
-                  {art.title}
-                </h3>
+                {/* Tags & Action CTA */}
+                <div className="space-y-4 pt-4 border-t border-slate-100 mt-auto">
+                  <div className="flex flex-wrap gap-1">
+                    {art.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 bg-[#f8fafc] border border-slate-200 text-[10px] text-slate-500 font-mono rounded"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                    {art.tags.length > 3 && (
+                      <span className="text-[10px] text-slate-400 font-mono pl-1">
+                        +{art.tags.length - 3} more
+                      </span>
+                    )}
+                  </div>
 
-                <p className="text-slate-500 text-xs sm:text-sm leading-relaxed line-clamp-4 font-normal">
-                  {art.summary}
-                </p>
-              </div>
-
-              {/* Tags & Action CTA */}
-              <div className="mt-5 space-y-4 pt-4 border-t border-slate-100">
-                <div className="flex flex-wrap gap-1">
-                  {art.tags.slice(0, 3).map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-0.5 bg-[#f8fafc] border border-slate-200 text-[10px] text-slate-500 font-mono rounded"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                  {art.tags.length > 3 && (
-                    <span className="text-[10px] text-slate-400 font-mono pl-1">
-                      +{art.tags.length - 3} more
-                    </span>
-                  )}
+                  <a
+                    href={art.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    id={`blog_link_${art.id}`}
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3b82f6] hover:text-[#2563eb] transition-colors uppercase tracking-wider"
+                  >
+                    <span>Read full write-up</span>
+                    <ExternalLink size={12} className="group-hover:translate-x-1 transition-transform duration-150" />
+                  </a>
                 </div>
-
-                <a
-                  href={art.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  id={`blog_link_${art.id}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#3b82f6] hover:text-blue-800 transition-colors uppercase tracking-wider"
-                >
-                  <span>Read full write-up</span>
-                  <ExternalLink size={12} className="group-hover:translate-x-0.5 transition-transform" />
-                </a>
               </div>
             </article>
           ))}

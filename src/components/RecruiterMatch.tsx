@@ -2,7 +2,11 @@ import { useState } from "react";
 import { SearchCode, CheckCircle2, UserCheck, AlertCircle } from "lucide-react";
 import { RECRUITER_ROLES } from "../data";
 
-export default function RecruiterMatch() {
+export interface RecruiterMatchProps {
+  onSchedule?: () => void;
+}
+
+export default function RecruiterMatch({ onSchedule }: RecruiterMatchProps) {
   const [selectedRole, setSelectedRole] = useState(RECRUITER_ROLES[0].id);
 
   const roleObj = RECRUITER_ROLES.find((r) => r.id === selectedRole)!;
@@ -128,8 +132,12 @@ export default function RecruiterMatch() {
             <div className="pt-4 border-t border-slate-250/60">
               <button
                 onClick={() => {
-                  const el = document.getElementById("scheduler_wrapper");
-                  el?.scrollIntoView({ behavior: "smooth" });
+                  if (onSchedule) {
+                    onSchedule();
+                  } else {
+                    const el = document.getElementById("connect_section");
+                    el?.scrollIntoView({ behavior: "smooth" });
+                  }
                 }}
                 className="w-full py-2.5 rounded bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold font-display tracking-wider uppercase flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm"
               >

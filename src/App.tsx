@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
-import { Milestone, Code2, PlaySquare, Eye, Newspaper, Mail, ChevronUp, AlertCircle, RefreshCw } from "lucide-react";
+import { Milestone, Code2, PlaySquare, Eye, Newspaper, Mail, ChevronUp, AlertCircle, RefreshCw, Calendar } from "lucide-react";
 import Header from "./components/Header";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import SkillCluster from "./components/SkillCluster";
 import Sandbox from "./components/Sandbox";
 import RecruiterMatch from "./components/RecruiterMatch";
 import Publications from "./components/Publications";
-import MeetingScheduler from "./components/MeetingScheduler";
-import ContactForm from "./components/ContactForm";
+import ContactAndScheduler from "./components/ContactAndScheduler";
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<string>("all");
+  const [activeTab, setActiveTab ] = useState<string>("all");
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [contactTab, setContactTab] = useState<"coordinates" | "scheduler">("coordinates");
 
   // Monitor scroll height to conditionally reveal our floating Back-To-Top trigger
   useEffect(() => {
@@ -85,12 +85,28 @@ export default function App() {
             </button>
             <button
               onClick={() => {
-                const el = document.getElementById("contact_section");
-                el?.scrollIntoView({ behavior: "smooth" });
+                setContactTab("scheduler");
+                setTimeout(() => {
+                  const el = document.getElementById("connect_section");
+                  el?.scrollIntoView({ behavior: "smooth" });
+                }, 50);
+              }}
+              className="px-1.5 sm:px-2.5 py-1 text-[11px] sm:text-xs font-semibold text-slate-600 hover:text-slate-950 hover:bg-slate-100 transition-colors rounded cursor-pointer flex items-center gap-1.5"
+            >
+              <Calendar size={13} className="text-[#3b82f6]" />
+              <span>Book Call</span>
+            </button>
+            <button
+              onClick={() => {
+                setContactTab("coordinates");
+                setTimeout(() => {
+                  const el = document.getElementById("connect_section");
+                  el?.scrollIntoView({ behavior: "smooth" });
+                }, 50);
               }}
               className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-xs font-semibold text-white bg-[#0f172a] border border-[#0f172a] hover:bg-[#1e293b] transition-colors rounded font-display cursor-pointer"
             >
-              Inquire
+              Contact
             </button>
           </div>
         </div>
@@ -103,7 +119,13 @@ export default function App() {
       <main className="space-y-10 pt-4">
         
         {/* Role matching and overlap calculator goes first to capture recruiters attention! */}
-        <RecruiterMatch />
+        <RecruiterMatch onSchedule={() => {
+          setContactTab("scheduler");
+          setTimeout(() => {
+            const el = document.getElementById("connect_section");
+            el?.scrollIntoView({ behavior: "smooth" });
+          }, 50);
+        }} />
 
         <div className="border-t border-slate-200/50 my-4" />
 
@@ -123,13 +145,8 @@ export default function App() {
 
         <div className="border-t border-slate-200/50 my-4" />
 
-        {/* Calendar and Meeting scheduler */}
-        <div id="scheduler_wrapper" className="w-full max-w-7xl mx-auto px-4 py-4">
-          <MeetingScheduler />
-        </div>
-
-        {/* Feedback inbox and write form */}
-        <ContactForm />
+        {/* Unified Contact and Calendar Scheduler Section */}
+        <ContactAndScheduler activeTab={contactTab} setActiveTab={setContactTab} />
 
       </main>
 
@@ -145,9 +162,9 @@ export default function App() {
         <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-500 font-mono uppercase">
           <span>London, UK</span>
           <span>•</span>
-          <span>Senior Architect</span>
+          <span>Senior Architect, Product Innovation</span>
           <span>•</span>
-          <span>Data, Cloud, AI &amp; Product Innovation</span>
+          <span>Data, Cloud &amp; AI Advisor</span>
         </div>
       </footer>
 
