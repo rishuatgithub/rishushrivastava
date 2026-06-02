@@ -21,7 +21,7 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     period: "July 2022 - Present",
     bulletPoints: [
       "Lead EMEA Data and AI architecture strategy, designing scalable enterprise Pentaho deployments for global fortune-list clients.",
-      "Directed a multi-million $ GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities that accelerated product adoption and revenue streams.",
+      "Directed a $2M GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities that accelerated product adoption and revenue streams.",
       "Architected and shipped Pentaho Change Data Capture (CDC) to General Availability (GA), delivering high-throughput real-time ingestion with near-zero latency.",
       "Conceived and delivered an Agentic AI-driven automated Migration Accelerator to translate Informatica mappings to Pentaho, slashing conversion overhead by 60-70%."
     ],
@@ -175,12 +175,13 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     id: "blog1",
     title: "GenAI Plugin Suite: Unlocking the Power of Pentaho Data Integration with GenAI",
-    url: "https://community.hitachivantara.com/blogs/author/genai-plugin-suite",
+    url: "https://pentaho.com/insights/blogs/genai-plugin-suite-unlocking-the-power-of-pentaho-data-integration-with-genai/",
     publishDate: "2023-11-14",
     readingTime: "12 min read",
     category: "AI Integration",
     summary: "Introducing the comprehensive Pentaho GenAI Suite. Step-by-step blueprint to orchestrate zero-trust LLM inference blocks, transform text outputs, and compute vectors directly inside enterprise data flows without exposing private customer keys.",
-    tags: ["Generative AI", "Pentaho", "Data Engineering", "Enterprise AI"]
+    tags: ["Generative AI", "Pentaho", "Data Engineering", "Enterprise AI"],
+    coverImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "blog2",
@@ -190,7 +191,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readingTime: "8 min read",
     category: "Data Science",
     summary: "Discover abstract thematic patterns in vast unstructured corpora. Features a detailed conceptual breakdown of the Dirichlet distribution, statistical intuition, and Python Scikit-Learn LDA walkthroughs with visualization tools.",
-    tags: ["LDA", "Topic Modelling", "Python", "NLP", "Machine Learning"]
+    tags: ["LDA", "Topic Modelling", "Python", "NLP", "Machine Learning"],
+    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "blog3",
@@ -200,7 +202,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readingTime: "6 min read",
     category: "DevOps",
     summary: "Demystifying infrastructure as code. This practical guide covers writing custom TF configurations, managing state files, and spinning up safe multi-AZ Amazon VPCs, subnets, and EC2 nodes cleanly.",
-    tags: ["Terraform", "AWS", "Infrastructure-as-Code", "DevOps"]
+    tags: ["Terraform", "AWS", "Infrastructure-as-Code", "DevOps"],
+    coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "blog4",
@@ -210,7 +213,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readingTime: "5 min read",
     category: "Cloud Strategy",
     summary: "A reality check on cloud migrations. Analyzes typical corporate fallacies (lift-and-shift traps, blind vendor lock-in, dynamic bill expansion), and presents architectural frameworks for successful multi-cloud governance.",
-    tags: ["Cloud Strategy", "Cloud Adoption", "Enterprise Architecture", "FinOps"]
+    tags: ["Cloud Strategy", "Cloud Adoption", "Enterprise Architecture", "FinOps"],
+    coverImage: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "blog5",
@@ -220,7 +224,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readingTime: "4 min read",
     category: "Data Wrangling",
     summary: "Stop manual transcription. Shares real coding blueprints utilizing Python extraction libraries (Tabula, PDFPlumber) combined with Pandas workflows to clean, structure, and export complex tables from flat docs.",
-    tags: ["Python", "PDF Extraction", "Pandas", "Data Cleansing"]
+    tags: ["Python", "PDF Extraction", "Pandas", "Data Cleansing"],
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=600"
   }
 ];
 

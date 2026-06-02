@@ -7,6 +7,7 @@ export interface BlogArticle {
   category: string;
   summary: string;
   tags: string[];
+  coverImage?: string;
 }
 
 export interface SkillItem {
