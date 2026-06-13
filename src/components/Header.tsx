@@ -81,16 +81,17 @@ export default function Header() {
                 {INTRO_HIGHLIGHTS.bio}
               </p>
 
-              {/* Quick Socials & Action Links */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 pt-2 justify-center sm:justify-start">
+              {/* Quick Socials, Initiatives & Action Links */}
+              <div className="flex flex-wrap items-center gap-2.5 pt-3 justify-center sm:justify-start">
                 <a
                   href={INTRO_HIGHLIGHTS.linkedIn}
                   target="_blank"
                   rel="noreferrer"
                   id="header_linkedin_link"
-                  className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-[#0f172a] text-white hover:bg-[#1e293b] transition-colors text-xs sm:text-sm font-semibold shadow-sm"
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-[#0077b5] hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow transition-all duration-200 text-xs sm:text-sm font-semibold cursor-pointer"
+                  title="Connect on LinkedIn"
                 >
-                  <Linkedin size={14} className="sm:w-[15px] sm:h-[15px]" />
+                  <Linkedin size={15} className="text-[#0077b5]" />
                   <span>LinkedIn</span>
                 </a>
                 <a
@@ -98,26 +99,47 @@ export default function Header() {
                   target="_blank"
                   rel="noreferrer"
                   id="header_github_link"
-                  className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-white border border-[#e2e8f0] hover:bg-[#f8fafc] hover:border-slate-350 transition-all text-xs sm:text-sm font-semibold text-[#0f172a]"
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow transition-all duration-200 text-xs sm:text-sm font-semibold cursor-pointer"
+                  title="View GitHub Profile"
                 >
-                  <Github size={14} className="sm:w-[15px] sm:h-[15px]" />
+                  <Github size={15} className="text-slate-800" />
                   <span>GitHub</span>
                 </a>
                 <a
-                  href={INTRO_HIGHLIGHTS.blog}
+                  href="https://tech-spaghetti.com/"
                   target="_blank"
                   rel="noreferrer"
                   id="header_blog_link"
-                  className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-white border border-[#e2e8f0] hover:bg-[#f8fafc] hover:border-slate-350 transition-all text-xs sm:text-sm font-semibold text-[#0f172a]"
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow transition-all duration-200 text-xs sm:text-sm font-semibold cursor-pointer"
+                  title="Tech Spaghetti - Technical Blog Site"
                 >
-                  <Globe size={14} className="sm:w-[15px] sm:h-[15px]" />
-                  <span>Blog</span>
+                  <img
+                    src="https://tech-spaghetti.com/wp-content/uploads/2023/11/cropped-2.png"
+                    alt="Tech Spaghetti Logo"
+                    className="w-4 h-4 sm:w-[15px] sm:h-[15px] object-contain rounded-sm"
+                  />
+                  <span>Tech Spaghetti</span>
+                </a>
+                <a
+                  href="https://atmenterprise.github.io/atm/"
+                  target="_blank"
+                  rel="noreferrer"
+                  id="header_atm_link"
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-slate-900 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow transition-all duration-200 text-xs sm:text-sm font-semibold cursor-pointer"
+                  title="ATM Enterprise - Precision Software Studio"
+                >
+                  <img
+                    src="https://github.com/atmenterprise.png"
+                    alt="ATM Enterprise Logo"
+                    className="w-4 h-4 sm:w-[15px] sm:h-[15px] object-contain rounded-sm"
+                  />
+                  <span>ATM Enterprise</span>
                 </a>
                 
                 <button
                   onClick={handlePrint}
                   id="header_print_resume"
-                  className="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-[#f1f5f9] text-[#3b82f6] border border-[#e2e8f0] hover:bg-[#e2e8f0] transition-all text-xs sm:text-sm font-semibold cursor-pointer"
+                  className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#3b82f6]/5 text-[#3b82f6] border border-[#3b82f6]/10 hover:bg-[#3b82f6]/10 hover:border-[#3b82f6]/20 transition-all duration-200 text-xs sm:text-sm font-semibold shadow-sm hover:shadow cursor-pointer"
                 >
                   <span className="hidden sm:inline">Export Executive Summary PDF</span>
                   <span className="sm:hidden">Export PDF</span>
