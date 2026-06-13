@@ -230,7 +230,7 @@ const SCENARIOS: Scenario[] = [
       "[SECURITY] AES-256 Cryptographic tokenization applied to 'sender_account_no' and 'recip_account_no'.",
       "[PROCESS - PDI] Normalizing micro-cents. Re-mapped string '250495' successfully to value '2504.95' USD.",
       "[PROCESS - PDI] Validation checks passed. No schema drift identified. Commit complete to encrypted Silver Parquet.",
-      "[GOVERNANCE - PDC] Updated Pentaho Catalog Lineage with compliance tokens. GDPR Auditable trace generated.",
+      "[GOVERNANCE - PDC] Updated Pentaho Data Catalog Lineage with compliance tokens. GDPR Auditable trace generated.",
       "[PROCESS - PDI] Running automated ledger reconciliation against bank routing indices...",
       "[COMPLETED] Ledgers validated. Star schema reporting files published. Verified by Rishu's Compliance Automation."
     ]
@@ -306,7 +306,7 @@ const SCENARIOS: Scenario[] = [
     logSequence: [
       "[INFO - PDI Engine] Booting high-velocity telemetry pipeline...",
       "[INGEST - Bronze] Streaming sub-second IoT messages via Kinesis Firehose landing zone directly...",
-      "[GOVERNANCE - PDC] Pentaho Catalog auto-cataloged thermal stream. Identified Schema stability: 100%.",
+      "[GOVERNANCE - PDC] Pentaho Data Catalog auto-cataloged thermal stream. Identified Schema stability: 100%.",
       "[PROCESS - PDI] PDI Micro-batch cluster running Transformation 'Thermal_Scale_Standardization'...",
       "[PROCESS - PDI] Converting Fahrenheit sensors to Celsius. 1,424 rows processed...",
       "[PROCESS - PDI] Pruning noisy telemetry. Drops 4 sensor rows showing extreme dropouts (-999°C).",
@@ -414,7 +414,7 @@ export default function Sandbox() {
         const customLogs = [
           `[OBSERVABILITY] Stream live. Hitting schema validation SLA... OK.`,
           `[PDI Engine] Streamed an additional 1,000,000 packets through PDI executor... OK.`,
-          `[GOVERNANCE] Metadata dictionary scan: consistent. Pentaho Catalog updated.`,
+          `[GOVERNANCE] Metadata dictionary scan: consistent. Pentaho Data Catalog updated.`,
           `[SECURITY] Policy audit: encrypting sensitive columns actively. Zero leakage detected.`
         ];
         const randomLog = customLogs[Math.floor(Math.random() * customLogs.length)];
@@ -1298,7 +1298,7 @@ export default function Sandbox() {
                         Disaster Recovery Demo: Schema Drift Attack Trigger
                       </div>
                       <p className="text-slate-400 text-xs leading-relaxed font-normal">
-                        Simulate an upstream CRM update throwing schema columns (e.g. adding unannounced client fields) directly to the Bronze staging. Watch how Pentaho Catalog automatically halts compilation, shielding the Gold schema and Snowflake tables from crash failures.
+                        Simulate an upstream CRM update throwing schema columns (e.g. adding unannounced client fields) directly to the Bronze staging. Watch how Pentaho Data Catalog automatically halts compilation, shielding the Gold schema and Snowflake tables from crash failures.
                       </p>
                     </div>
 

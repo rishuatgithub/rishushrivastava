@@ -2,10 +2,10 @@ import { BlogArticle, SkillCategory, ExperienceItem, Certification } from "./typ
 
 export const INTRO_HIGHLIGHTS = {
   name: "Rishu Shrivastava",
-  title: "Senior Architect - Data, AI & Product Innovation",
+  title: "Senior Architect (Data, AI & Product Innovation)",
   location: "London, UK",
   experienceYears: "14+",
-  bio: "Senior Data & AI Architect with 14+ years of experience designing and delivering cloud-native data platforms, real-time systems, and AI-driven products across financial services, healthcare, and communications domains. Currently leading product innovation and architecture at Pentaho, driving multi-million dollar GenAI initiatives, building real-time data capabilities, and developing AI-powered accelerators for large-scale platform modernization. Proven track record of translating emerging technologies, including Gen AI and Agentic AI systems, into enterprise-grade solutions that improve product capability, accelerate delivery, and drive measurable business outcomes.",
+  bio: "Senior Data & AI Architect with 14+ years of experience building cloud-native data platforms, real-time systems, and enterprise GenAI products. Currently leading product innovation and architecture at Pentaho, driving multi-million dollar Agentic AI initiatives and real-time CDC engines. Expert at translating emerging tech into high-impact, enterprise-grade solutions that accelerate delivery and drive business outcomes.",
   currentStatus: "Open to strategic advisory roles, speaking engagements, and architectural consulting",
   linkedIn: "https://www.linkedin.com/in/rishushrivastava/",
   github: "https://github.com/rishuatgithub",
@@ -20,15 +20,15 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     location: "United Kingdom",
     period: "July 2022 - Present",
     bulletPoints: [
-      "Lead EMEA Data and AI architecture strategy, designing scalable enterprise Pentaho deployments for global fortune-list clients.",
+      "Lead EMEA Data and AI architecture strategy, designing scalable enterprise deployments of Pentaho Data Integration and Pentaho Data Catalog for global fortune-list clients.",
       "Directed a $2M GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities that accelerated product adoption and revenue streams.",
       "Architected and shipped Pentaho Change Data Capture (CDC) to General Availability (GA), delivering high-throughput real-time ingestion with near-zero latency.",
-      "Conceived and delivered an Agentic AI-driven automated Migration Accelerator to translate Informatica mappings to Pentaho, slashing conversion overhead by 60-70%."
+      "Conceived and delivered an Agentic AI-driven automated Migration Accelerator to translate Informatica mappings to Pentaho Data Integration, slashing conversion overhead by 60-70%."
     ],
-    technologies: ["Pentaho PDI", "Pentaho Data Catalog", "AWS", "Snowflake", "Generative AI", "Agentic AI", "Python", "Java", "Terraform", "Docker", "DevOps", "Data Governance"],
+    technologies: ["Pentaho Data Integration", "Pentaho Data Catalog", "AWS", "Snowflake", "Generative AI", "Agentic AI", "Python", "Java", "Terraform", "Docker", "DevOps", "Data Governance"],
     featuredProject: {
       name: "GenAI Migration Accelerator & CDC",
-      description: "Conceived and shipped an AI-powered migration accelerator converting Informatica mappings to Pentaho using agentic workflows with 70% effort reductions, alongside rolling out Pentaho CDC (Change Data Capture) to GA."
+      description: "Conceived and shipped an AI-powered migration accelerator converting Informatica mappings to Pentaho Data Integration using agentic workflows with 70% effort reductions, alongside rolling out Pentaho CDC (Change Data Capture) to GA."
     }
   },
   {
@@ -59,7 +59,7 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
       "Refactored underlying database schemas and partitioning strategies, boosting sluggish business dashboards by up to 90% in query speeds.",
       "Won first prize in the Cognizant Global Innovation Challenge with a custom AI prototype designed to automatically translate and compile languages."
     ],
-    technologies: ["Kafka", "Apache Spark", "Hive", "Python", "Java", "Pentaho Plus", "Tableau", "Cloudera"],
+    technologies: ["Kafka", "Apache Spark", "Hive", "Python", "Java", "Pentaho Data Integration", "Pentaho Business Analytics", "Tableau", "Cloudera"],
     featuredProject: {
       name: "Language Translation Engine",
       description: "Created an AI-driven script compiler and translator converting legacy code patterns, winning top laurels in the annual Cognizant Innovation challenge."
@@ -72,10 +72,10 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     location: "India",
     period: "Jan 2012 - Dec 2014",
     bulletPoints: [
-      "Engineered robust batch extraction, transformation, and high-throughput ingestion pipelines using enterprise orchestration platforms such as Pentaho and Alteryx.",
+      "Engineered robust batch extraction, transformation, and high-throughput ingestion pipelines using enterprise orchestration platforms such as Pentaho Data Integration and Alteryx.",
       "Developed complex Java microservices, SQL databases, and peer-reviewed design assets to ensure GDPR compliance."
     ],
-    technologies: ["Java", "SQL", "Pentaho PDI", "Alteryx", "Linux"],
+    technologies: ["Java", "SQL", "Pentaho Data Integration", "Alteryx", "Linux"],
     featuredProject: {
       name: "High-Throughput Ingestion Framework",
       description: "Designed re-usable corporate assets for automated metadata injection, accelerating DW ingestion cycles by approximately 30%."
@@ -88,7 +88,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "Enterprise Data Architecture & Cloud",
     iconName: "Database",
     skills: [
-      { name: "Pentaho Plus PDI / Catalog", level: 98, featured: true, frequency: "Daily" },
+      { name: "Pentaho Data Integration", level: 98, featured: true, frequency: "Daily" },
+      { name: "Pentaho Data Catalog", level: 95, featured: true, frequency: "Daily" },
       { name: "AWS Cloud & BigData Stack", level: 95, featured: true, frequency: "Daily" },
       { name: "Data Warehousing (Snowflake / Athena)", level: 93, featured: true, frequency: "Daily" },
       { name: "Data Governance (GDPR / PII)", level: 90, featured: false, frequency: "Frequent" },
@@ -121,52 +122,51 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    name: "Google AI Professional Certificate",
+    issuer: "Google / Coursera",
+    year: "2024",
+    color: "from-violet-600 to-indigo-650"
+  },
+  {
     name: "AWS Solution Architect - Associate",
     issuer: "Amazon Web Services (AWS)",
     year: "2021",
-    credentialId: "AWS-ASA-9941A",
     color: "from-amber-500 to-orange-600"
   },
   {
     name: "Oracle Certified Java Programmer",
     issuer: "Oracle Corporation",
     year: "2012",
-    credentialId: "OCJP-99424",
     color: "from-blue-605 to-cyan-550"
   },
   {
     name: "Cognizant Certified Pentaho Developer",
     issuer: "Cognizant Technology Solutions",
     year: "2015",
-    credentialId: "CCPD-10291",
     color: "from-sky-700 to-indigo-650"
   },
   {
     name: "Coursera Certified - Google Cloud Platform Architecture",
     issuer: "Coursera / Google Cloud",
     year: "2020",
-    credentialId: "C-GCP-8842",
     color: "from-blue-500 to-slate-600"
   },
   {
     name: "Stanford Certified - Machine Learning",
     issuer: "Stanford University",
     year: "2019",
-    credentialId: "S-ML-3329",
     color: "from-red-650 to-rose-500"
   },
   {
     name: "Coursera Certified - Natural Language Specialisation",
     issuer: "Coursera / Deeplearning.AI",
     year: "2020",
-    credentialId: "C-NLS-771",
     color: "from-teal-500 to-emerald-600"
   },
   {
     name: "Certified Python Programmer - PCEP 30-01",
     issuer: "Python Institute",
     year: "2021",
-    credentialId: "PCEP-304",
     color: "from-yellow-500 to-blue-500"
   }
 ];
@@ -233,9 +233,9 @@ export const RECRUITER_ROLES = [
   {
     id: "role_etl",
     name: "Enterprise Data/ETL Architect",
-    skillsNeeded: ["Pentaho Plus PDI / Catalog", "AWS Cloud & BigData Stack", "Data Warehousing (Snowflake / Athena)", "Data Governance (GDPR / PII)", "Streaming (Kafka / Kinesis / SQS)"],
+    skillsNeeded: ["Pentaho Data Integration", "Pentaho Data Catalog", "AWS Cloud & BigData Stack", "Data Warehousing (Snowflake / Athena)", "Data Governance (GDPR / PII)", "Streaming (Kafka / Kinesis / SQS)"],
     experienceMatch: "exp1",
-    justification: "Rishu leading Data and AI architecture strategy across EMEA at Pentaho and has designed scalable enterprise data solutions supporting critical business processes for global Fortune clients."
+    justification: "Rishu leads Data and AI architecture strategy across EMEA at Pentaho and has designed scalable enterprise data solutions supporting critical business processes for global Fortune clients."
   },
   {
     id: "role_aiml",
