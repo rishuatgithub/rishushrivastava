@@ -122,16 +122,16 @@ export default function SkillCluster() {
                     Issuer: <span className="font-semibold text-slate-700">{cert.issuer}</span>
                   </p>
                   
-                  {cert.credentialId && (
-                    <div className="flex items-center gap-2 mt-2">
+                  <div className="flex items-center gap-2 mt-2">
+                    {cert.credentialId && (
                       <span className="text-[10px] font-mono bg-[#f8fafc] text-slate-600 px-2 py-0.5 rounded border border-slate-200">
                         ID: {cert.credentialId}
                       </span>
-                      <span className="text-[10px] font-mono text-slate-400 font-semibold uppercase">
-                        Issued {cert.year}
-                      </span>
-                    </div>
-                  )}
+                    )}
+                    <span className="text-[10px] font-mono text-slate-400 font-semibold uppercase">
+                      Issued {cert.year}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
