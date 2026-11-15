@@ -5,7 +5,7 @@ export const INTRO_HIGHLIGHTS = {
   title: "Senior Architect (Data, AI & Product Innovation)",
   location: "London, UK",
   experienceYears: "14+",
-  bio: "Senior Data & AI Architect with 14+ years of experience building cloud-native data platforms, real-time systems, and enterprise GenAI products. Currently leading product innovation and architecture at Pentaho, driving multi-million dollar Agentic AI initiatives and real-time CDC engines. Expert at translating emerging tech into high-impact, enterprise-grade solutions that accelerate delivery and drive business outcomes.",
+  bio: "Senior Data & AI Architect with 14+ years of experience building cloud-native data platforms, real-time systems, and enterprise GenAI products. Leading product innovation and architecture at Pentaho, with work spanning a $2M generative AI initiative, agentic migration workflows and real-time change data capture.",
   currentStatus: "Open to strategic advisory roles, speaking engagements, and architectural consulting",
   linkedIn: "https://www.linkedin.com/in/rishushrivastava/",
   github: "https://github.com/rishuatgithub",
@@ -18,17 +18,17 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     role: "Senior Architect, Product Innovation & Professional Services",
     company: "Hitachi Vantara / Pentaho",
     location: "United Kingdom",
-    period: "July 2022 - Present",
+    period: "Jul 2022 – Present",
     bulletPoints: [
-      "Lead EMEA Data and AI architecture strategy, designing scalable enterprise deployments of Pentaho Data Integration and Pentaho Data Catalog for global fortune-list clients.",
-      "Directed a $2M GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities that accelerated product adoption and revenue streams.",
-      "Architected and shipped Pentaho Change Data Capture (CDC) to General Availability (GA), delivering high-throughput real-time ingestion with near-zero latency.",
-      "Conceived and delivered an Agentic AI-driven automated Migration Accelerator to translate Informatica mappings to Pentaho Data Integration, slashing conversion overhead by 60-70%."
+      "Lead EMEA Data and AI architecture strategy, designing scalable enterprise deployments of Pentaho Data Integration and Pentaho Data Catalog for global enterprise clients.",
+      "Directed a $2M GenAI initiative with Hitachi Ltd, delivering core AI platform capabilities for enterprise use cases.",
+      "Architected and shipped Pentaho Change Data Capture (CDC) to general availability (GA), enabling high-throughput, real-time data ingestion.",
+      "Conceived and delivered an agentic AI migration accelerator to translate Informatica mappings to Pentaho Data Integration, reducing migration effort by 60–70%."
     ],
     technologies: ["Pentaho Data Integration", "Pentaho Data Catalog", "AWS", "Snowflake", "Generative AI", "Agentic AI", "Python", "Java", "Terraform", "Docker", "DevOps", "Data Governance"],
     featuredProject: {
       name: "GenAI Migration Accelerator & CDC",
-      description: "Conceived and shipped an AI-powered migration accelerator converting Informatica mappings to Pentaho Data Integration using agentic workflows with 70% effort reductions, alongside rolling out Pentaho CDC (Change Data Capture) to GA."
+      description: "Built agentic workflows to convert Informatica mappings to Pentaho Data Integration, reducing migration effort by 60–70%. Also delivered Pentaho Change Data Capture (CDC) to general availability."
     }
   },
   {
@@ -36,7 +36,7 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     role: "Data Architect & Analytics Manager",
     company: "Cognizant",
     location: "India & United Kingdom",
-    period: "Jan 2019 - July 2022",
+    period: "Jan 2019 – Jul 2022",
     bulletPoints: [
       "Architected secure, serverless cloud pipelines (AWS Glue, Lambda, Athena, Snowflake) supporting real-time sales BI and trade settlements for Tier-1 investment banks and global pharmaceutical leaders.",
       "Engineered event-driven microservices running on Kubernetes to automate complex parsing of structured and unstructured business communications.",
@@ -45,7 +45,7 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     technologies: ["AWS", "Snowflake", "Terraform", "Docker", "Kubernetes", "Python", "Tableau", "GitLab CI/CD"],
     featuredProject: {
       name: "Serverless Analytics Ecosystem",
-      description: "Codesigned an AWS event-sourced marketing pipeline serving dynamic Tableau reporting models, achieving massive cost reductions and sub-second rendering bounds."
+      description: "Co-designed an event-driven analytics pipeline on AWS to support marketing data processing and Tableau reporting."
     }
   },
   {
@@ -53,16 +53,16 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     role: "Senior Associate & Tech Consultant",
     company: "Cognizant",
     location: "India",
-    period: "Jan 2015 - Dec 2018",
+    period: "Jan 2015 – Dec 2018",
     bulletPoints: [
       "Designed and developed low-latency streaming clusters using Apache Kafka, Spark Streaming, and Cloudera Hadoop for financial transaction routing.",
-      "Refactored underlying database schemas and partitioning strategies, boosting sluggish business dashboards by up to 90% in query speeds.",
+      "Refactored underlying database schemas and partitioning strategies, improving dashboard query performance by up to 90%.",
       "Won first prize in the Cognizant Global Innovation Challenge with a custom AI prototype designed to automatically translate and compile languages."
     ],
     technologies: ["Kafka", "Apache Spark", "Hive", "Python", "Java", "Pentaho Data Integration", "Pentaho Business Analytics", "Tableau", "Cloudera"],
     featuredProject: {
       name: "Language Translation Engine",
-      description: "Created an AI-driven script compiler and translator converting legacy code patterns, winning top laurels in the annual Cognizant Innovation challenge."
+      description: "Built an AI prototype to translate and compile code, winning first prize in the Cognizant Global Innovation Challenge."
     }
   },
   {
@@ -70,15 +70,15 @@ export const EXPERIENCE_HISTORY: ExperienceItem[] = [
     role: "Software Engineer & Tech Analyst",
     company: "Cognizant",
     location: "India",
-    period: "Jan 2012 - Dec 2014",
+    period: "Jan 2012 – Dec 2014",
     bulletPoints: [
       "Engineered robust batch extraction, transformation, and high-throughput ingestion pipelines using enterprise orchestration platforms such as Pentaho Data Integration and Alteryx.",
-      "Developed complex Java microservices, SQL databases, and peer-reviewed design assets to ensure GDPR compliance."
+      "Developed Java services and SQL databases, and peer-reviewed technical designs."
     ],
     technologies: ["Java", "SQL", "Pentaho Data Integration", "Alteryx", "Linux"],
     featuredProject: {
       name: "High-Throughput Ingestion Framework",
-      description: "Designed re-usable corporate assets for automated metadata injection, accelerating DW ingestion cycles by approximately 30%."
+      description: "Designed reusable components for automated metadata injection, accelerating data warehouse ingestion cycles by approximately 30%."
     }
   }
 ];
@@ -90,10 +90,10 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Pentaho Data Integration", level: 98, featured: true, frequency: "Daily" },
       { name: "Pentaho Data Catalog", level: 95, featured: true, frequency: "Daily" },
-      { name: "AWS Cloud & BigData Stack", level: 95, featured: true, frequency: "Daily" },
-      { name: "Data Warehousing (Snowflake / Athena)", level: 93, featured: true, frequency: "Daily" },
+      { name: "AWS & Big Data Platforms", level: 95, featured: true, frequency: "Daily" },
+      { name: "Snowflake & Amazon Athena", level: 93, featured: true, frequency: "Daily" },
       { name: "Data Governance (GDPR / PII)", level: 90, featured: false, frequency: "Frequent" },
-      { name: "Streaming (Kafka / Kinesis / SQS)", level: 88, featured: false, frequency: "Frequent" },
+      { name: "Streaming & Messaging (Kafka / Kinesis / SQS)", level: 88, featured: false, frequency: "Frequent" },
     ]
   },
   {
@@ -101,14 +101,14 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     iconName: "Code2",
     skills: [
       { name: "GenAI & Agentic AI Systems", level: 96, featured: true, frequency: "Daily" },
-      { name: "Python (PyTorch / Scikit-Learn)", level: 95, featured: true, frequency: "Daily" },
-      { name: "SQL & Relational/HQL Languages", level: 92, featured: false, frequency: "Daily" },
+      { name: "Python (PyTorch / scikit-learn)", level: 95, featured: true, frequency: "Daily" },
+      { name: "SQL & HiveQL", level: 92, featured: false, frequency: "Daily" },
       { name: "Java (Core, Spring, PDI Plugins)", level: 88, featured: false, frequency: "Frequent" },
       { name: "RAG & LLM Orchestration Tools", level: 94, featured: true, frequency: "Daily" },
     ]
   },
   {
-    title: "Libraries, DevOps & Infrastructure",
+    title: "DevOps, Infrastructure & Delivery",
     iconName: "Cpu",
     skills: [
       { name: "Terraform (Infrastructure as Code)", level: 90, featured: true, frequency: "Daily" },
@@ -122,13 +122,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    name: "Google AI Professional Certificate",
-    issuer: "Google / Coursera",
-    year: "2024",
-    color: "from-violet-600 to-indigo-650"
-  },
-  {
-    name: "AWS Solution Architect - Associate",
+    name: "AWS Certified Solutions Architect – Associate",
     issuer: "Amazon Web Services (AWS)",
     year: "2021",
     color: "from-amber-500 to-orange-600"
@@ -146,25 +140,25 @@ export const CERTIFICATIONS: Certification[] = [
     color: "from-sky-700 to-indigo-650"
   },
   {
-    name: "Coursera Certified - Google Cloud Platform Architecture",
+    name: "Google Cloud Platform Architecture (course certificate)",
     issuer: "Coursera / Google Cloud",
     year: "2020",
     color: "from-blue-500 to-slate-600"
   },
   {
-    name: "Stanford Certified - Machine Learning",
+    name: "Machine Learning (course certificate)",
     issuer: "Stanford University",
     year: "2019",
     color: "from-red-650 to-rose-500"
   },
   {
-    name: "Coursera Certified - Natural Language Specialisation",
-    issuer: "Coursera / Deeplearning.AI",
+    name: "Natural Language Processing Specialisation (course certificate)",
+    issuer: "DeepLearning.AI / Coursera",
     year: "2020",
     color: "from-teal-500 to-emerald-600"
   },
   {
-    name: "Certified Python Programmer - PCEP 30-01",
+    name: "PCEP – Certified Entry-Level Python Programmer",
     issuer: "Python Institute",
     year: "2021",
     color: "from-yellow-500 to-blue-500"
@@ -179,13 +173,13 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     publishDate: "2023-11-14",
     readingTime: "12 min read",
     category: "AI Integration",
-    summary: "Introducing the comprehensive Pentaho GenAI Suite. Step-by-step blueprint to orchestrate zero-trust LLM inference blocks, transform text outputs, and compute vectors directly inside enterprise data flows without exposing private customer keys.",
+    summary: "An introduction to the Pentaho GenAI Plugin Suite and its use in connecting enterprise data integration workflows with large language models.",
     tags: ["Generative AI", "Pentaho", "Data Engineering", "Enterprise AI"],
     coverImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=600"
   },
   {
     id: "blog2",
-    title: "Topic Modelling : Latent Dirichlet Allocation, an introduction",
+    title: "Topic Modelling: Latent Dirichlet Allocation, an Introduction",
     url: "https://anotherreeshu.wordpress.com/2020/06/11/topic-modelling-latent-dirichlet-allocation-an-introduction/",
     publishDate: "2020-06-11",
     readingTime: "8 min read",
@@ -233,23 +227,23 @@ export const RECRUITER_ROLES = [
   {
     id: "role_etl",
     name: "Enterprise Data/ETL Architect",
-    skillsNeeded: ["Pentaho Data Integration", "Pentaho Data Catalog", "AWS Cloud & BigData Stack", "Data Warehousing (Snowflake / Athena)", "Data Governance (GDPR / PII)", "Streaming (Kafka / Kinesis / SQS)"],
+    skillsNeeded: ["Pentaho Data Integration", "Pentaho Data Catalog", "AWS & Big Data Platforms", "Snowflake & Amazon Athena", "Data Governance (GDPR / PII)", "Streaming & Messaging (Kafka / Kinesis / SQS)"],
     experienceMatch: "exp1",
-    justification: "Rishu leads Data and AI architecture strategy across EMEA at Pentaho and has designed scalable enterprise data solutions supporting critical business processes for global Fortune clients."
+    justification: "Rishu leads Data and AI architecture strategy across EMEA at Pentaho and has designed scalable enterprise data solutions supporting critical business processes for global enterprise clients."
   },
   {
     id: "role_aiml",
     name: "AI & Product Innovation Lead",
-    skillsNeeded: ["GenAI & Agentic AI Systems", "Python (PyTorch / Scikit-Learn)", "RAG & LLM Orchestration Tools", "Java (Core, Spring, PDI Plugins)"],
+    skillsNeeded: ["GenAI & Agentic AI Systems", "Python (PyTorch / scikit-learn)", "RAG & LLM Orchestration Tools", "Java (Core, Spring, PDI Plugins)"],
     experienceMatch: "exp1",
-    justification: "Rishu directed Hitachi's $2M GenAI product initiative, coauthored public topic modeling/LDA literature, and deployed automated migration accelerators using agentic intelligence."
+    justification: "Rishu directed Hitachi's $2M GenAI product initiative, published an introduction to topic modelling with LDA, and deployed automated migration accelerators using agentic intelligence."
   },
   {
     id: "role_cloud",
     name: "Cloud & DevOps Architect",
-    skillsNeeded: ["AWS Cloud & BigData Stack", "Terraform (Infrastructure as Code)", "Docker & Kubernetes Orchestration", "CI/CD (GitLab, Jenkins, Actions)"],
+    skillsNeeded: ["AWS & Big Data Platforms", "Terraform (Infrastructure as Code)", "Docker & Kubernetes Orchestration", "CI/CD (GitLab, Jenkins, Actions)"],
     experienceMatch: "exp2",
-    justification: "Certified AWS Solutions Architect and Terraform Associate. He has successfully designed serverless ETL stacks and DevOps architectures using Athena, Lambda, Glue, DynamoDB, and GitLab CI/CD."
+    justification: "Earned the AWS Solutions Architect credential in 2021 and has designed serverless ETL stacks and DevOps architectures using Athena, Lambda, Glue, DynamoDB, and GitLab CI/CD."
   }
 ];
 
@@ -264,6 +258,6 @@ export const SANDBOX_NODES = {
   ],
   destinations: [
     { id: "dest_snowflake", name: "Snowflake Analytic Warehouse", desc: "Highly structured analytics, multi-tenant schemas." },
-    { id: "dest_dashboard", name: "Real-time PowerBI / Dashboards", desc: "Live business intelligence and reports." }
+    { id: "dest_dashboard", name: "Real-time Power BI / Dashboards", desc: "Live business intelligence and reports." }
   ]
 };
