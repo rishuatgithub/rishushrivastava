@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Rishu Shrivastava</title>
+  <rect width="64" height="64" rx="14" fill="#19385f"/>
+  <g fill="none" stroke="#fffefa" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 45V19h9a7 7 0 0 1 0 14h-9m9 0 9 12"/>
+    <path d="M51 22c-2-2-4-3-7-3-4 0-7 3-7 6 0 9 15 5 15 14 0 4-3 6-8 6-3 0-6-1-8-3"/>
+  </g>
+</svg>
